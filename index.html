@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculator</h1>
+        <div class="calculator">
+            <input type="text" name="screen"  id="screen">
+            <table>
+                <tr>
+                    <td><button onclick="appendToScreen('1')">1</button></td>
+                    <td><button onclick="appendToScreen('2')">2</button></td>
+                    <td><button onclick="appendToScreen('3')">3</button></td>
+                    <td><button onclick="appendToScreen('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="appendToScreen('4')">4</button></td>
+                    <td><button onclick="appendToScreen('5')">5</button></td>
+                    <td><button onclick="appendToScreen('6')">6</button></td>
+                    <td><button onclick="appendToScreen('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="appendToScreen('7')">7</button></td>
+                    <td><button onclick="appendToScreen('8')">8</button></td>
+                    <td><button onclick="appendToScreen('9')">9</button></td>
+                    <td><button onclick="appendToScreen('*')">*</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="appendToScreen('0')">0</button></td>
+                    <td><button onclick="appendToScreen('.')">.</button></td>
+                    <td><button onclick="appendToScreen('/')">/</button></td>
+                    <td><button onclick="clearScreen()">AC</button></td>
+                </tr>
+            </table>
+            <button class="equal-button" onclick="evaluateExpression()" class="equal-button">=</button>
+        </div>
+
+    </div> 
+
+</body>
+<script src="index.js">
+</script>
+</html>
